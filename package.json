@@ -1,0 +1,22 @@
+{
+  "name": "@metacentre/scalars",
+  "version": "1.0.0",
+  "description": "commonly used graphql scalars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "secret-stack",
+    "metacentre",
+    "graphql",
+    "plugin"
+  ],
+  "author": "av8ta",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^15.4.0",
+    "graphql-scalars": "^1.6.1",
+    "graphql-tag": "^2.11.0"
+  }
+}
