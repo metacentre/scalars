@@ -47,6 +47,11 @@ const {
   // VoidResolver
 } = require('graphql-scalars')
 
+// const { GraphQLUpload } = require('graphql-upload')
+// todo: why the heck does the world fall down when
+// trying to use this resolver for the Upload scalar???
+// I seem to have to defy the documentation... strange
+
 const typeDefs = gql`
   scalar Date
   scalar Time
@@ -93,6 +98,7 @@ const typeDefs = gql`
   scalar JSONObject
   scalar Byte
   scalar Void
+  scalar Upload
 `
 
 module.exports = {
@@ -158,6 +164,8 @@ module.exports = {
       JSON: JSONResolver,
       JSONObject: JSONObjectResolver,
       Byte: ByteResolver
+
+      // Upload: GraphQLUpload
     }
     api.graphql.addTypeDefs(typeDefs)
     api.graphql.addResolvers(resolvers)
