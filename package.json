@@ -14,6 +14,10 @@
   ],
   "author": "av8ta",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:metacentre/bos/plugins/scalars.git"
+  },
   "dependencies": {
     "graphql": "^15.4.0",
     "graphql-scalars": "^1.6.1",
