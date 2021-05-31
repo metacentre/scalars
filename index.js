@@ -104,6 +104,7 @@ const typeDefs = gql`
 module.exports = {
   name: 'scalars',
   version: require('./package.json').version,
+  manifest: {},
   init: (api, config) => {
     if (!api.graphql) {
       throw new Error(
