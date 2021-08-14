@@ -2,7 +2,7 @@
   "name": "@metacentre/scalars",
   "version": "1.0.0",
   "description": "commonly used graphql scalars",
-  "main": "index.js",
+  "main": "scalars.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
     "url": "git@gitlab.com:metacentre/bos/plugins/scalars.git"
   },
   "dependencies": {
+    "debug": "^4.3.2",
     "graphql": "^15.4.0",
     "graphql-scalars": "^1.6.1",
     "graphql-tag": "^2.11.0",

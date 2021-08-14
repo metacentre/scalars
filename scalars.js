@@ -101,15 +101,17 @@ const typeDefs = gql`
   scalar Upload
 `
 
+const debug = require('debug')('plugins:scalars')
+const pkg = require('./package.json')
+
 module.exports = {
   name: 'scalars',
-  version: require('./package.json').version,
+  version: pkg.version,
   manifest: {},
   init: (api, config) => {
+    debug(`[${pkg.name} v${pkg.version}] init`)
     if (!api.graphql) {
-      throw new Error(
-        `${require('./package.json').name} plugin requires graphql plugin`
-      )
+      throw new Error(`${pkg.name} plugin requires graphql plugin`)
     }
 
     const resolvers = {
