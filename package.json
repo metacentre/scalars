@@ -13,7 +13,7 @@
     "plugin"
   ],
   "author": "av8ta",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git@gitlab.com:metacentre/bos/plugins/scalars.git"
